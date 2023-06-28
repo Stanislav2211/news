@@ -1,0 +1,11 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Main page{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>{{title}}</h1>
+        <p>This is a website where visitors can post and read news about different themes..</p>
+        <a href="{% url 'news_home' %}">To the news page</a>
+    </div>
+{% endblock %}
